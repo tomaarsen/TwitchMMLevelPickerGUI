@@ -9,6 +9,7 @@ When the bot has started, it will open up this GUI:
 ![image](https://user-images.githubusercontent.com/37621491/60506964-55989a00-9cc7-11e9-8381-dec8f24be42a.png)
 
 The bot connected to this GUI will, when "Run" is pressed, allow chat members to add their levels to the drawing. When the streamer wishes to play a level, they can semi-randomly generate a level to play from the list of levels. It's possible to give subscribers a higher chance of winning this drawing, based on how many months they have been subscribed.  
+
 In short, this bot allows streamers to fairly pick chat levels with just one click.
 
 --- 
@@ -37,13 +38,23 @@ In short, this bot allows streamers to fairly pick chat levels with just one cli
 <b>!clearlevel</b>
 </pre>
 - Clears the list of levels
-- Anyone with the allowed rank can use this. (See [Settings](https://github.com/CubieDev/TwitchMMLevelPicker/blob/master/README.md#Settings) for more information)
+- Anyone with the allowed rank can use this. (See [Settings](https://github.com/CubieDev/TwitchMMLevelPickerGUI/blob/master/README.md#Settings) for more information)
 ---
 <pre>
 <b>!levelhelp/!helplevel</b>
 </pre>
 - Shows information about the commands everyone can use.
 - Anyone can use this.
+
+---
+
+# Odds
+
+The odds each person has by default is `1`. We will call this the weight of their entry.
+
+The weight is incremented by a bonus weight, based on how many months they have been subscribed to the streamer. The parameter MonthsPerChance in the Settings file determines how many months of subscriptions counts for 1 extra weight.
+
+If this MonthsPerChance value is set to 6, someone with 11 months of subscriptions will have `11 / 6 = 1.8333...` additional weight per roll. This would mean they have `1 + 1.8333... = 2.8333...` weight, while someone who is not subscribed has the standard `1`. This means that the person with 11 months of subscriptions is `2.8333... / 1 = 2.8333...` times as likely to win the roll.
 
 ---
 
@@ -74,7 +85,7 @@ This bot is controlled by a settings.txt file, which looks like:
 | Authentication       | The OAuth token for the bot account.                              | "oauth:pivogip8ybletucqdz4pkhag6itbax" |
 | AllowedRanks  | List of ranks required to be able to perform the commands. | ["broadcaster", "moderator"] |
 | AllowedPeople | List of users who, even if they don't have the right ranks, will be allowed to perform the commands. | ["cubiedev"] |
-| MonthsPerChance | How many months of total subscriptions on the current channel should count for 1 extra chance in the drawing. If set to 6, someone with 11 months of subscriptions will have `11 / 6 = 1.8333...` additional chances per roll. This would mean they have `1 + 1.8333... = 2.8333...`, while someone who is not subscribed has the standard `1`. | 6 |
+| MonthsPerChance | How many months of total subscriptions on the current channel should count for 1 extra chance in the drawing. See [Odds](https://github.com/CubieDev/TwitchMMLevelPickerGUI/blob/master/README.md#Odds) for more information. | 6 |
 
 *Note that the example OAuth token is not an actual token, but merely a generated string to give an indication what it might look like.*
 
