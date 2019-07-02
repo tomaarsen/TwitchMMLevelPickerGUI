@@ -12,6 +12,8 @@ The bot connected to this GUI will, when "Run" is pressed, allow chat members to
 
 In short, this bot allows streamers to fairly pick chat levels with just one click.
 
+This bot is similar to my [Twitch Mario Maker Level Queue](https://github.com/CubieDev/TwitchMMLevelQueueGUI). However, the bot in this repository semi-randomly picks levels from the list of all added levels, giving better odds to people who have been subscribed for longer, while the [Level Queue](https://github.com/CubieDev/TwitchMMLevelQueueGUI) uses a queue which does not give advantages to subscribers.
+
 --- 
 
 # Commands
