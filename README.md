@@ -107,6 +107,12 @@ Let's clarify the functionality from the GUI:
 | Pick Next Level | Equivalent to typing `!nextlevel` in chat. Picks the next level. |
 | Clear: <date> | Clears the list of levels. The date shows when the list of levels was last cleared. |
 
+In addition to these buttons, there is a textbox which will automatically fill with chat levels.
+This chat box consists of two sections, seperated by a dotted line.
+
+The level above the line is the current level. This is the one you should play, and also the one which your chat members will get to see when they type `!currentlevel`.
+
+Below the line are all levels that have a chance to become the next level. They are shown in case you really want to play a level by a certain user, you can quickly look at which code they entered. 
 
 ---
 
