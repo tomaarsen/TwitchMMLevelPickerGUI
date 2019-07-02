@@ -183,7 +183,7 @@ class MMLevelPicker:
     
     def handle_help(self):
         
-        self.view.output(f"Commands: !addlevel XXX-XXX-XXX to add your level, !current/!level to get the code of the current level.", MessageSource.HELP)
+        self.view.output(f"Commands: !addlevel XXX-XXX-XXX to add your level, !current/!level to get the code of the current level. This is not a queue, it's a semi-random drawing between all added levels!", MessageSource.HELP)
 
 if __name__ == "__main__":
     db = Database()
