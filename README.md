@@ -26,7 +26,7 @@ In short, this bot allows streamers to fairly pick chat levels with just one cli
 <b>!nextlevel</b>
 </pre>
 - Semi-randomly generates the next level to be played.<br>
-- Anyone with the allowed rank can use this. (See [Settings](https://github.com/CubieDev/TwitchMMLevelPicker/blob/master/README.md#Settings) for more information)
+- Anyone with the allowed rank can use this. (See [Settings](https://github.com/CubieDev/TwitchMMLevelPicker#Settings) for more information)
 ---
 <pre>
 <b>!level/!current/!currentlevel</b>
@@ -52,7 +52,7 @@ In short, this bot allows streamers to fairly pick chat levels with just one cli
 
 The odds each person has by default is `1`. We will call this the weight of their entry.
 
-The weight is incremented by a bonus weight, based on how many months they have been subscribed to the streamer. The parameter MonthsPerChance in the Settings file determines how many months of subscriptions counts for 1 extra weight.
+The weight is incremented by a bonus weight, based on how many months they have been subscribed to the streamer. The parameter MonthsPerChance in the [Settings](https://github.com/CubieDev/TwitchMMLevelPickerGUI/blob/master/README.md#Settings) file determines how many months of subscriptions counts for 1 extra weight.
 
 If this MonthsPerChance value is set to 6, someone with 11 months of subscriptions will have `11 / 6 = 1.8333...` additional weight per roll. This would mean they have `1 + 1.8333... = 2.8333...` weight, while someone who is not subscribed has the standard `1`. This means that the person with 11 months of subscriptions is `2.8333... / 1 = 2.8333...` times as likely to win the roll.
 
@@ -85,7 +85,7 @@ This bot is controlled by a settings.txt file, which looks like:
 | Authentication       | The OAuth token for the bot account.                              | "oauth:pivogip8ybletucqdz4pkhag6itbax" |
 | AllowedRanks  | List of ranks required to be able to perform the commands. | ["broadcaster", "moderator"] |
 | AllowedPeople | List of users who, even if they don't have the right ranks, will be allowed to perform the commands. | ["cubiedev"] |
-| MonthsPerChance | How many months of total subscriptions on the current channel should count for 1 extra chance in the drawing. See [Odds](https://github.com/CubieDev/TwitchMMLevelPickerGUI/blob/master/README.md#Odds) for more information. | 6 |
+| MonthsPerChance | How many months of total subscriptions on the current channel should count for 1 extra chance in the drawing. See [Odds](https://github.com/CubieDev/TwitchMMLevelPickerGUI#Odds) for more information. | 6 |
 
 *Note that the example OAuth token is not an actual token, but merely a generated string to give an indication what it might look like.*
 
