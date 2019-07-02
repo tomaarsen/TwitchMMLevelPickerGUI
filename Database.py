@@ -99,6 +99,7 @@ class Database:
         # Deletes all items
         self.execute("DELETE FROM Levels;")
         self.execute("DELETE FROM LevelCurrent;")
+        self.execute("DELETE FROM LevelClear;")
         self.set_clear_time()
 
     def set_clear_time(self):
