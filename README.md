@@ -1,5 +1,5 @@
 # TwitchMMLevelPickerGUI
-Twitch bot which semi-randomly picks Mario Maker 2 Levels from chat
+Twitch bot which semi-randomly picks Mario Maker 2 Levels from chat, with a GUI
 
 ---
 
