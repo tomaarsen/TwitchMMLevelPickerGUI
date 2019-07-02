@@ -52,20 +52,6 @@ class Database:
             conn.commit()
             if fetch:
                 return cur.fetchall()
-    """
-    def add_item(self, gifter, packs, extra, time):
-        self.execute("INSERT INTO PackCounter(gifter, sub_bomb_packs, mult_packs, time) VALUES (?, ?, ?, ?)", (gifter, packs, extra, time))
-    
-    def get_total(self):
-        data = self.execute("SELECT SUM(sub_bomb_packs) + SUM(mult_packs) FROM PackCounter;", fetch=True)
-        return data[0][0] if data[0][0] != None else 0
-    
-    def get_grouped_total(self):
-        return self.execute("SELECT gifter, SUM(sub_bomb_packs) + SUM(mult_packs) FROM PackCounter GROUP BY gifter ORDER BY 2 DESC;", fetch=True)
-
-    def get_timed_grouped_total(self):
-        return self.execute("SELECT gifter, SUM(sub_bomb_packs), SUM(mult_packs), MAX(time) FROM PackCounter GROUP BY gifter ORDER BY 2 DESC;", fetch=True)
-    """
 
     def add_level(self, user, code, weight):
         if self.execute("SELECT SUM(user) FROM LevelCurrent WHERE user == ?", values=(user,), fetch=True)[0][0] != None:
