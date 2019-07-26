@@ -115,19 +115,14 @@ This chat box consists of two sections, seperated by a dotted line.
 The level above the line is the current level. This is the one you should play, and also the one which your chat members will get to see when they type `!currentlevel`.
 
 Below the line are all levels that have a chance to become the next level. They are shown in case you really want to play a level by a certain user, you can quickly look at which code they entered. 
-
 ---
 
 # Requirements
-* Python 3+ (Only tested on 3.6)
+* [Python 3.6+](https://www.python.org/downloads/)
+* [Module requirements](requirements.txt)<br>
+Install these modules using `pip install -r requirements.txt`
 
-Download Python online.
-
-* TwitchWebsocket
-
-Install this using `pip install git+https://github.com/CubieDev/TwitchWebsocket.git`
-
-This last library is my own [TwitchWebsocket](https://github.com/CubieDev/TwitchWebsocket) wrapper, which makes making a Twitch chat bot a lot easier.
+Among these modules is my own [TwitchWebsocket](https://github.com/CubieDev/TwitchWebsocket) wrapper, which makes making a Twitch chat bot a lot easier.
 This repository can be seen as an implementation using this wrapper.
 
 ---
