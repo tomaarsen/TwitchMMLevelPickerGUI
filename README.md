@@ -23,24 +23,28 @@ This bot is similar to my [Twitch Mario Maker Level Queue](https://github.com/Cu
 </pre>
 - Adds the level with code XXX-XXX-XXX to the list.<br>
 - Anyone can use this.
+
 ---
 <pre>
 <b>!nextlevel</b>
 </pre>
 - Semi-randomly generates the next level to be played.<br>
 - Anyone with the allowed rank can use this. (See [Settings](https://github.com/CubieDev/TwitchMMLevelPicker#Settings) for more information)
+
 ---
 <pre>
 <b>!level/!current/!currentlevel</b>
 </pre>
 - Shows the creator and code of the current level in the chat.
 - Anyone can use this.
+
 ---
 <pre>
 <b>!clearlevel</b>
 </pre>
 - Clears the list of levels
 - Anyone with the allowed rank can use this. (See [Settings](https://github.com/CubieDev/TwitchMMLevelPickerGUI/blob/master/README.md#Settings) for more information)
+
 ---
 <pre>
 <b>!levelhelp/!helplevel</b>
