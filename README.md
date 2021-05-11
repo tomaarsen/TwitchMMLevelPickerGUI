@@ -119,6 +119,7 @@ This chat box consists of two sections, seperated by a dotted line.
 The level above the line is the current level. This is the one you should play, and also the one which your chat members will get to see when they type `!currentlevel`.
 
 Below the line are all levels that have a chance to become the next level. They are shown in case you really want to play a level by a certain user, you can quickly look at which code they entered. 
+
 ---
 
 # Requirements
